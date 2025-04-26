@@ -31,7 +31,7 @@ def main():
         model_path = "./artifacts/model.pkl"
         if not os.path.exists(model_path):
             print("🚫 Model not found. Please build the model first using:")
-            print("   python main.py --run-build-only")
+            print("   python main.py --run-build")
             return
         subprocess.run(["streamlit", "run", "app.py"])
 
